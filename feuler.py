@@ -1,6 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# User defined colors from 
+# http://tableaufriction.blogspot.com/2012/11/finally-you-can-use-tableau-data-colors.html
+
 blue = (114/255., 158/255., 206/255.)
 orange = (255/255., 158/255., 74/255.)
 green = (103/255., 191/255., 92/255.)
