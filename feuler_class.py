@@ -81,6 +81,7 @@ class ode:
 			ax.plot( self.ts, x_true, color=red, lw=1.5 )
 			ax.set_xlabel( 'time', fontsize=12 )
 			ax.set_ylabel( r'$x_n$', fontsize=16 )
+			plt.savefig( 'feuler.png' )
 		else:
 			fig, ax = plt.subplots( 2, 1)
 			ax[0].plot( self.ts, x_true, color=red, lw=1.5 ) 
@@ -96,6 +97,7 @@ class ode:
 			ax[1].set_ylabel(r'$E$', fontsize=16 )
 			ax[1].set_xlabel('time', fontsize=12 )
 			ax[1].legend( loc='best' )		
+			plt.savefig( 'feuler_E.png' )
 
 #======================================================================================
 #============================== End of class ode ======================================
