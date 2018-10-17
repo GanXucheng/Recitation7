@@ -15,6 +15,7 @@ red = (237/255., 102/255., 93/255.)
 #============================================================================
 class ode:
 
+     #======== Define member variables known to ode ===========
 	x0 = 0.0
 	v0 = 0.0
 
@@ -26,6 +27,8 @@ class ode:
 	args = None
 	scheme = None
 	
+     #========== Define routines available to ode ============
+
 	def __init__(self, fxn, scheme):
 	
 		self.fxn = fxn
@@ -94,7 +97,11 @@ class ode:
 			ax[1].set_xlabel('time', fontsize=12 )
 			ax[1].legend( loc='best' )		
 
+#======================================================================================
+#============================== End of class ode ======================================
+#======================================================================================
 
+#Other functions to be used
 
 def feuler( x, v, h, f, *args ):
     vn = v + h*f(x, *args)
